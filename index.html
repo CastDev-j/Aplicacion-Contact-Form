@@ -12,8 +12,19 @@
 
 <body>
 
+
+
+
   <main>
-    <h1>Contact Us</h1>
+
+    <article id= "header">
+      <span id="success-message">
+        <h3> <img src="assets/images/icon-success-check.svg" alt=""> Message Sent!</h3>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </span>
+      
+      <h1>Contact Us</h1>
+    </article>
 
     <article>
       <div class="responsive-input">
@@ -40,14 +51,14 @@
     <div class="select-type">
 
       <label for="query-1" class="test">
-        <input type="radio" name="query" id="query-1">
+        <input type="radio" name="query" id="query-1" value="10">
         <span for="query-fail" class="selection">
           <p>General Enquiry</p>
         </span>
       </label>
 
       <label for="query-2" class="test">
-        <input type="radio" name="query" id="query-2">
+        <input type="radio" name="query" id="query-2" value="0">
         <span for="query-fail" class="selection">
           <p>Support Query</p>
         </span>
@@ -63,17 +74,13 @@
     <div id="message-error" class="error">This field is required</div>
 
 
-    <input type="checkbox" name="" id="final-checkbox">
+    <input type="checkbox" id="final-checkbox">
     <label for="final-checkbox">I consent to being contacted by the team</label>
     <div id="consent-error" class="error">To submit this form, please consent to being contacted</div>
 
 
     <button id="submit-button">Submit</button>
 
-    <div id="success-message">
-      <h3> <img src="assets/images/icon-success-check.svg" alt=""> Message Sent!</h3>
-      <p>Thanks for completing the form. We'll be in touch soon!</p>
-    </div>
   </main>
 
   <script src="./script.js"></script>
