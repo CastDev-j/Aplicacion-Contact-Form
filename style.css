@@ -311,8 +311,8 @@ main {
         border-width: 0  0 .5rem 0.5rem;
         background-color: transparent;
         margin: 1.5vh;
-        margin-left: -4.6vh;
-        margin-top: 1.3vh;
+        margin-left: -4.8vh;
+        margin-top: 1.1vh;
         color: var(--green-500);
         transform: scale(.3) rotate(-45deg);
         z-index: 1;
@@ -435,9 +435,18 @@ main {
 
     }
 
-    & #final-checkbox+label {
+    #final-checkbox+label {
         height: 2rem !important;
     }
+
+    #final-checkbox+label::after {
+
+        margin-left: -4.9vh !important;
+        margin-top: 1.3vh;
+
+
+    }
+
 
     #success-message{
         position: static;
