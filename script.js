@@ -20,16 +20,6 @@ const acceptTermsError = document.querySelector('#consent-error');
 
 const successMessage = document.querySelector('#success-message');
 
-/*
-.error-input{
-    border: 1.5px solid var(--red-errors) !important;
-}
-
-.error-text{
-    opacity: 1 !important;
-}
-*/
-
 function setFieldError(field) {
     field.classList.add('error-input');
 }
