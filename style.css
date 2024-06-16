@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Karla', sans-serif;
+    scrollbar-width: none; 
 }
 
 @font-face {
@@ -22,6 +23,12 @@
 html {
     font-size: 16px;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
 
 :root {
     --grey-900: #2A4144;
@@ -227,10 +234,27 @@ main {
         & .responsive-input {
             width: 50%;
         }
-
-
-
     }
+
+    & #textarea-input {
+        margin-top: 2vh;
+        display: block;
+        width: 100%;
+        min-height: 10vh !important;
+        padding: 1rem;
+        border: 1.5px solid var(--grey-500);
+        border-radius: 5px;
+        font-size: 1rem;
+        resize: none;
+        overflow-y: auto;
+        white-space: pre-wrap;
+    }
+    
+    & #textarea-input:focus {
+        outline: none;
+        border: 1.5px solid var(--green-500);
+    }
+
 
 
 }
