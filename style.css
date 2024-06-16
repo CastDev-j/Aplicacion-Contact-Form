@@ -57,9 +57,9 @@ main {
     position: relative;
     width: 90%;
     max-width: 800px;
-    height: 81vh;
+    height: 88vh;
     background-color: var(--white);
-    margin: 11vh auto;
+    margin: 6vh auto;
     padding: 40px;
     border-radius: 10px;
 
@@ -98,7 +98,8 @@ main {
         border: 1.5px solid var(--grey-500);
         border-radius: 5px;
         font-size: 1rem;
-        min-height: 48px;
+        height: 36px;
+        min-height: 36px;
 
 
 
@@ -270,7 +271,7 @@ main {
         height: 3vh;
         color: var(--grey-900);
         font-size: 1rem;
-        margin-top: 1rem;
+        margin-top: .5rem;
         align-items: center;
         cursor: pointer;
         transition: border 0.3s ease, background-color 0.3s ease;
@@ -421,6 +422,23 @@ main {
 
 
 @media (max-width: 768px) {
+
+    input{
+        height: 2rem !important;
+    }
+
+    .select-type {
+        gap: 1vh !important;
+    }
+    .selection {
+        height: 2rem !important;
+
+
+    }
+
+    & #final-checkbox+label {
+        height: 2rem !important;
+    }
 
     #success-message{
         position: static;
