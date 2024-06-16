@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./style.css">
+  <title>Contact form</title>
+
+</head>
+
+<body>
+
+  <main>
+    <h1>Contact Us</h1>
+
+    <label for="">First Name</label>
+    <input type="text" name="" id="">
+    <div id="fn-error">This field is required</div>
+
+    <label for="">Last Name</label>
+    <input type="text" name="" id="">
+    <div id="ln-error">This field is required</div>
+
+    <label for="">Email Address</label>
+    <input type="email" name="" id="">
+    <div id="email-error">Please enter a valid email address</div>
+
+
+    <label for="">Query Type</label>
+    <select name="" id="">
+      <option value="general-enquiry">General Enquiry</option>
+      <option value="support-request">Support Request</option>
+    </select>
+    <div id="query-error">Please select a query type</div>
+
+    <label for="">Message</label>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <div id="message-error">This field is required</div>
+
+    <input type="checkbox" name="" id="">
+    <label for="">I consent to being contacted by the team</label>
+    <div id="consent-error">To submit this form, please consent to being contacted</div>
+    
+
+    <button>Submit</button>
+
+    <div id="success-message">
+      <h3> <img src="assets/images/icon-success-check.svg" alt=""> Message Sent!</h3>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+  </main>
+
+</body>
+
+</html>
