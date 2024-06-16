@@ -15,34 +15,57 @@
   <main>
     <h1>Contact Us</h1>
 
-    <label for="">First Name</label>
-    <input type="text" name="" id="">
-    <div id="fn-error">This field is required</div>
+    <article>
+      <div class="responsive-input">
+        <label for="">First Name</label>
+        <input type="text" name="" id="">
+        <div id="fn-error" class="error">This field is required</div>
+      </div>
 
-    <label for="">Last Name</label>
-    <input type="text" name="" id="">
-    <div id="ln-error">This field is required</div>
+      <div class="responsive-input">
+        <label for="">Last Name</label>
+        <input type="text" name="" id="">
+        <div id="ln-error" class="error">This field is required</div>
+      </div>
+
+
+    </article>
 
     <label for="">Email Address</label>
-    <input type="email" name="" id="">
-    <div id="email-error">Please enter a valid email address</div>
+    <input type="text" name="" id="">
+    <div id="email-error" class="error">Please enter a valid email address</div>
 
 
     <label for="">Query Type</label>
-    <select name="" id="">
-      <option value="general-enquiry">General Enquiry</option>
-      <option value="support-request">Support Request</option>
-    </select>
-    <div id="query-error">Please select a query type</div>
+    <div class="select-type">
+
+      <label for="query-1" class="test">
+        <input type="radio" name="query" id="query-1">
+        <span for="query-fail" class="selection">
+          <p>General Enquiry</p>
+        </span>
+      </label>
+
+      <label for="query-2" class="test">
+        <input type="radio" name="query" id="query-2">
+        <span for="query-fail" class="selection">
+          <p>Support Query</p>
+        </span>
+      </label>
+
+    </div>
+
+
+    <div id="query-error" class="error">Please select a query type</div>
 
     <label for="">Message</label>
     <textarea name="" id="" cols="30" rows="10"></textarea>
-    <div id="message-error">This field is required</div>
+    <div id="message-error" class="error">This field is required</div>
 
     <input type="checkbox" name="" id="">
     <label for="">I consent to being contacted by the team</label>
-    <div id="consent-error">To submit this form, please consent to being contacted</div>
-    
+    <div id="consent-error" class="error">To submit this form, please consent to being contacted</div>
+
 
     <button>Submit</button>
 
@@ -51,6 +74,8 @@
       <p>Thanks for completing the form. We'll be in touch soon!</p>
     </div>
   </main>
+
+  <script src="./script.js"></script>
 
 </body>
 
